@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .skincare-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skincare-logo {
+        text-align: center;
+        color: #867b7b;
+    }
+
+    .skincare-collections {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        gap: 1rem;
+    }
+
+    .skincare-card {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 250px;
+        height: 20rem;
+    }
+
+    .skincare-card:nth-child(1) {
+        background-color: orange;
+    }
+
+    .skincare-card:nth-child(2) {
+        background-color: skyblue;
+    }
+
+    .skincare-card:nth-child(3) {
+        background-color: purple;
+    }
+
+    .skincare-card:nth-child(1):hover {
+        z-index: 10;
+        width: 12rem;
+        background-image: url('./public/L&L_Website_lineup1@2x.png');
+        background-size: cover;
+
+        .skincare-card-img {
+            display: none;
+        }
+
+        .skincare-card-text {
+            display: none;
+        }
+    }
+
+    .skincare-card:nth-child(3):hover {
+        z-index: 10;
+        width: 12rem;
+        background-image: url('./public/L&L_Website_lineup3.png');
+        background-size: cover;
+
+        .skincare-card-img {
+            display: none;
+        }
+
+        .skincare-card-text {
+            display: none;
+        }
+    }
+
+    .skincare-card:nth-child(2):hover {
+        z-index: 10;
+        width: 12rem;
+        background-image: url('./public/L&L_Website_lineup2.png');
+        background-size: cover;
+
+        .skincare-card-img {
+            display: none;
+        }
+
+        .skincare-card-text {
+            display: none;
+        }
+    }
+
+    .skincare-card-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .skincare-btnx {
+        border-radius: 14px;
+        background-color: green;
+        border: none;
+        margin-top: 1rem;
+        text-align: center;
+        width: 8rem;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skincare-btnx:hover {
+        background-color: black;
+        color: white;
+    }
+
+    @media (max-width: 700px) {
+        .skincare-collections {
+            flex-direction: column;
+        }
+
+        .skincare-card:nth-child(2) {
+            display: none;
+        }
+
+        .skincare-card:nth-child(3) {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="skincare-main">
+        <div class="skincare-logo">
+            <div class="overlay"></div>
+            <img src="./public//Group 2538.svg" />
+            <h1>Our Collections</h1>
+            <h4>We’ve created three collections that reach out to everybody’s skincare needs</h4>
+        </div>
+        <div class="skincare-collections">
+            <div class="skincare-card">
+                <img class="skincare-card-img" src="./public/Group 2608.svg" alt="Collection 1">
+                <h2>illuminati</h2>
+                <p class="skincare-card-text">Description for Collection 1</p>
+            </div>
+
+            <div class="skincare-card">
+                <img class="skincare-card-img" src="./public/Group 2625.svg" alt="Collection 2">
+                <h2>Cleaning</h2>
+                <p class="skincare-card-text">Description for Collection 2</p>
+            </div>
+
+            <div class="skincare-card">
+                <img class="skincare-card-img" src="./public/Group 2638.svg" alt="Collection 3">
+                <h2>somooting</h2>
+                <p class="skincare-card-text">Description for Collection 3</p>
+            </div>
+        </div>
+        <button class="skincare-btnx">Shop All</button>
+    </div>
+</body>
+
+</html>

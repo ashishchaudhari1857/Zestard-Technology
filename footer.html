@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #F5F3EF;
+        }
+
+        .footer-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            justify-content: center;
+        }
+
+        .footer-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer-sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+  
+        .footer-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: #474444;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer-h2,
+        .footer-h1 {
+            color: rgb(40, 43, 40);
+            margin-bottom: 10px;
+        }
+
+        .footer-ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-li {
+            margin-bottom: 5px;
+        }
+
+        .footer-input {
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: #f0f0f0;
+        }
+
+        .footer-button {
+            padding: 5px;
+            color: #0c0c0c;
+            border: none;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            box-shadow:  0px 0px  2px 2px white;
+            border-radius: 12px;
+            max-width: 200px; /* Adjust the max-width as needed */
+            margin-top: 10px; /* Add margin to separate from input */
+        }
+
+        .footer-main footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-main footer img {
+            max-width: 30px;
+            margin: 0 5px;
+        }
+
+        .footer-section h4{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .footer-social-icons img {
+            max-width: 50rem;
+            margin: 0 5px;
+        }
+
+        .footer-header {
+            position: relative;
+            justify-content: center;
+        }
+
+        .footer-header h1 {
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            color: rgb(102, 110, 110);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        @media (max-width: 1000px) {
+            .footer-sections {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer-main">
+        <div class="footer-header">
+            <img class="footer-img" src="./public/L&L_ReadytoHydrate copy.png" alt="Logo" />
+            <h1>Ready to Hydrate </h1>
+        </div>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul class="footer-ul">
+                    <li class="footer-li">Our Story</li>
+                    <li class="footer-li">Our Promise</li>
+                    <li class="footer-li">Shipping Returns</li>
+                    <li class="footer-li">FAQs</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>More Info</h4>
+                <ul class="footer-ul">
+                    <li class="footer-li">The Greenery</li>
+                    <li class="footer-li">Skin Glossary</li>
+                    <li class="footer-li">Terms of Use</li>
+                    <li class="footer-li">Privacy Policy</li>
+                    <li class="footer-li">COA</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Get in Touch</h4>
+                <ul class="footer-ul">
+                    <li class="footer-li">Have a question? Want to just say hello? Send us a message anytime at <span
+                            style="color: green;">hello@lumaandleaf.com</span></li>
+                    <li class="footer-li">
+                        The information and products on this site have not been evaluated by the FDA. The products are
+                        not intended to Diagnose, treat, cure, or prevent any disease.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>All of the Tea. None of the Spam</h4>
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        <input type="text" onfocus="none" placeholder="Enter your email" class="footer-input" />
+                        <button class="footer-button">Sign Up</button>
+                    </li>
+                    <li class="footer-social-icons">
+                        <img src="./public/Path 8341.svg" alt="Social Icon" />
+                        <img src="./public/Group 2719.svg" alt="Social Icon" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer style="display: flex ; text-align: center; flex-direction: column;">
+        <span >&copy; 2024 Your Company. All rights reserved</span>
+        <div class="footer-section">
+            <div class="footer-social-icons">
+                <img src="./public/Path 8341.svg" alt="Social Icon" />
+                <img src="./public/Group 2719.svg" alt="Social Icon" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

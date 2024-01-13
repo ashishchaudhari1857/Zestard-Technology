@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+</head>
+<style>
+:root {
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-family-bely-display: 'Bely Display', sans-serif;
+}
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   .home{
+    /* background: url('./public/HomeBg.png') no-repeat center center fixed; */
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+   }
+  .imgh{
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+.home_inner{ color: white;
+     position: absolute;
+     top: 30%;
+     right:20%;
+     text-wrap: wrap    ;
+    }
+
+    .home_btn{
+        border-radius: 14px;
+        padding:0.4rem;
+        font-size: 1rem;
+        border: none;
+        font-weight: bold;
+        background-color: white;
+        margin-top: 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+
+    .home_btn:hover{
+        background-color: black;
+        color: white;
+    }
+    .textxy{
+        width: 20px;
+        font-size: 1rem;
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 76px/68px var(--unnamed-font-family-bely-display);
+        font-weight: bolder;
+    }
+    @media (max-width: 768px) {
+    .home {
+        background-size: 200% 100%;
+        background-position: left;   
+    }
+    .home_inner{ 
+     top: 40%;
+     right:50%;
+     font-size: 1.5rem;
+   
+    }   
+}
+</style>
+<body>
+
+    <div class="home" id="">
+        <img src="./public/HomeBg.png" class="imgh"/>
+   <div class="home_inner">
+    <div class="textxy">Natural Plant Power Beauty </div>
+    <button class="home_btn">SHOP NOW &gt</button>
+   </div>
+    </div>
+</body>
+</html>

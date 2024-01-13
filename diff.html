@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+           margin-top: 3rem;
+        }
+
+        .text {
+            height: 200px;
+            background-color: #EFFAF4;
+            position: relative;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .text h4 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            text-align: center;
+            font-size: 2rem;
+            color: green;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-bottom: 1rem;
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            color: green;
+        }
+
+        .paragraph {
+            margin-top: 10px;
+            text-align: center;
+            color: #665f5f;
+            font-size: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: initial;
+            font-size: 1rem;
+            font-weight: normal;
+            color: black;
+            padding: .5rem;
+        }
+
+        .button:hover {
+            background-color: #000;
+            color: white;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .image, .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text">
+        <h4>Word on the Street!</h4>
+        <img src="./public/Group 2531.png" alt="Image 1">
+        <img src="./public/Group 2531.png" alt="Image 2">
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="./public/adam-winger-Xt4g9VbMljE-unsplash.png" alt="Image Description">
+        </div>
+        <div class="content">
+            <div class="title">Making a Difference</div>
+            <div class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pellentesque ipsum. Nulla tincidunt eros vel odio scelerisque, sed tristique orci ultricies. Cras in vehicula mauris. In massa lacus, vehicula nec ultrices eget, dapibus eu lacus. Nam nec fermentum nunc, non imperdiet quam. Since 2014, InHerShoes has supported thousands of girls to be 1% more courageous while positively impacting their communities in the process. We’ve partnered with InHerShoes to help give back. That’s why we have pledged to donate 5% of our annual revenue.
+            </div>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+</body>
+
+</html>

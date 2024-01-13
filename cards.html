@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    .container1 {
+        margin-bottom: 10rem;
+    }
+
+    .card1 {
+        height: 45rem;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 1px whitesmoke;
+    }
+
+    .card1 img {
+        padding: 1rem;
+        border-radius: 14px;
+    }
+
+    .card1-title {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .card1-text {
+        font-family: 'Times New Roman', Times, serif;
+        color: gray;
+    }
+
+ 
+
+
+
+    @media screen and (max-width:768px) {
+        .container1 {
+            margin-bottom: 5rem;
+        }
+    }
+
+    .skincare-btnx {
+        border-radius: 14px;
+        background-color:rgb(43, 40, 40);
+        color: white;
+    }
+
+   
+</style>
+<body>
+
+<div class="container container1">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card card1">
+                <img src="./public/L&L_Website_collections1.png" class="card-img-top" alt="Card Image">
+                <div class="card-body card1-body">
+                    <h5 class="card-title card1-title">3 Recipes You’ll Love, Inspired by Nature’s Goodness</h5>
+                    <p class="card-text card1-text ">Some quick example text to build on the card title and make up the example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary skincare-btnx"> Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card card1">
+                <img src="./public/FullLineup_Repurposed4.png" class="card-img-top" alt="Card Image">
+                <div class="card-body card1-body">
+                    <h5 class="card-title card1-title">5 Ideas for Repurposing Those Beautiful Bottles You Just Can’t Part With</h5>
+                    <p class="card-text card1-text">Skincare so good, you’ll want to eat it. Just kidding. Don’t do that, even if that ingredient list does look like a plant-based recipe from your Pinterest dreams.</p>
+                    <a href="#" class="btn btn-primary skincare-btnx">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card card1">
+                <img src="./public/Copy of DeshleeCouch_Lifestyle3.png" class="card-img-top" alt="Card Image">
+                <div class="card-body card1-body">
+                    <h5 class="card-title card1-title">How to Take Your Skincare Routine On A World Tour</h5>
+                    <p class="card-text card1-text">You may have already noticed that Luma & Leaf is a different kind of skincare company. We are committed to a core set of values that shape everything we do for you.</p>
+                    <a href="#" class="btn btn-primary skincare-btnx">Read More</a>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary skincare-btnx ">Shop All</button>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

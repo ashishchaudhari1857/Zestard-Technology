@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power</title>
+</head>
+<style>
+    .power-main {
+        display: flex;
+        background-color: #F5F3EF;
+    }
+
+    .power-header {
+        font-size: 2rem;
+        color: green;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 1rem;
+        width: 50%;
+        text-align: center;
+       margin-top:10%;
+    }
+
+    .power-sections {
+        width: 50%;
+    }
+
+    .power-section {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .power-section p {
+        color: rgb(116, 121, 121);
+    }
+
+    .power-header p {
+        color: rgb(116, 112, 108);
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .power-main {
+            flex-direction: column;
+            height: auto;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .power-header {
+            width: 100%;
+        }
+
+        .power-sections {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="power-main">
+        <div class="power-header">
+            <h1>Plant Power </h1>
+            <h1> to the People</h1>
+            <p style="font-family: sans-serif; font-size: 1rem;">Our products contain plants with benefits. Like broad-spectrum cannabidiol, a.k.a. CBD.</p>
+        </div>
+        <div class="power-sections">
+            <div class="power-section">
+                <img src="./public/Group 2521.svg" />
+                <div>
+                    <h3>Formula-First</h3>
+                    <p>We pair powerful ingredients - like vitamin C, squalene, hyaluronic acid, and bakuchiol - with broad-spectrum cannabidiol to help relieve a variety of skin issues and renew skin’s health.</p>
+                </div>
+            </div>
+            <div class="power-section">
+                <img src="./public/Group 2523.svg" />
+                <div>
+                    <h3>Sensitive-Safe</h3>
+                    <p>CBD’s calming and anti-inflammatory properties help soothe skin without giving it extra stress.</p>
+                </div>
+            </div>
+            <div class="power-section">
+                <img src="./public/Group 2525.svg" />
+                <div>
+                    <h3>Third-Party Tested</h3>
+                    <p>Our organically grown broad-spectrum cannabidiol will always have a Certificate of Analysis by third-party labs, to ensure all the benefits of CBD without the high of THC.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         .mainx {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #F5F3EF;
+            width: 100%;
+            height: 100vh;
+        }
+
+       .mainx img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contentx {
+            width: 50%;
+            padding: 2rem;
+            box-sizing: border-box; 
+        }
+
+        .headerx {
+            font-size: 2rem;
+            color: green;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-bottom: 1rem; 
+        }
+
+        .textx p {
+            text-align: center;
+        }
+
+        .btnxx {
+            display: block;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 14px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btnxx:hover {
+            background-color: green;
+        }
+
+        @media (max-width: 768px) {
+            .mainx {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .mainx img {
+                width: 100%;
+                height: auto;
+            }
+
+            .contentx {
+                width: 100%;
+            }
+            .headerx{
+                text-align: center;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="mainx">
+        <img src="./public/kreated-media-p0ASrbayoPQ-unsplash@2x.png" alt="Skincare Image">
+        <div class="contentx">
+            <div class="headerx">
+                <h1>No Stress.</h1> <h1>Just Great Skin.</h1>
+            </div>
+            <div class="textx">
+                <p>
+                    All too often, skincare can be complicated, confusing, and costly. With endless products making all kinds of claims, and ingredients you need an advanced degree to figure out. Finding what works for you usually means trial and error, then more of the same. Enter Luma & Leaf. We’re here to give you products that work, that are sensitive-safe, without harmful ingredients. Luma & Leaf combines the power of plants with the promise of science, to deliver gorgeous results for all skin types. Keeping you hydrated, radiant, and feeling like your best self, period.
+                </p>
+            </div>
+            <button class="btnxx" href='#'>Shop Now</button>
+        </div>
+        
+    </div>
+</body>
+</html>

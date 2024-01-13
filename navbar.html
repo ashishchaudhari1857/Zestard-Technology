@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+    * {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+         
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            background-color: white;
+            padding: 0.7rem;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+     
+        .drop-content {
+            position: absolute;
+            display: none;
+            text-decoration: none;
+            padding: 1rem;
+            background-color: rgb(241, 239, 235);
+            font-family: sans-serif;
+            z-index: 500;
+        }
+
+        .item:hover .drop-content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .itemslist {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .itemslist li {
+            cursor: pointer;
+        }
+
+        .itemslist li:hover .drop-content {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-text button:hover{
+            color: green
+            
+
+        }
+        ul li:hover {
+            color: green;
+        }
+
+        .header {
+            background-color: green;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="g">
+        <div class="header" > SHIP IT GOOD - FREE SHIPPING OVER $60</div>
+        <nav class="navbar">
+            <ul class="itemslist">
+                <li class="item">
+                    <span class="nav-text">Shop <span style="color: rgb(153, 141, 141); margin: auto;"> &#8964</span>
+                    <div class="drop-content">
+                        <ul>
+                            <li>some</li>
+                            <li>time</li>
+                            <li>all</li>
+                            <li>think</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="nav-text">About <span style="color: rgb(153, 141, 141); margin: auto;"> &#8964</span></span>
+                    <div class="drop-content">
+                        <ul>
+                            <li>some</li>
+                            <li>time</li>
+                            <li>all</li>
+                            <li>think</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-text">The Greenway</li>
+            </ul>
+          
+            <ul class="itemslist">
+                <li style="padding: 0; margin: 0;"> <img src="./public/search.svg" /></li>
+                <li class="nav-text" ><button style="border-radius: 10px; border: none;padding: 5px; ">cart</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
